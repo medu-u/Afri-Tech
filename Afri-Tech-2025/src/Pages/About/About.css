@@ -1,0 +1,41 @@
+/* Centered wrapper */
+.about-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 1.2rem;
+  }
+  
+  /* Card styling */
+  .about-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  /* Heading */
+  .about-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  
+  /* Paragraph */
+  .about-card p {
+    margin-top: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #4b5563;
+  }
+  
+  /* Mobile-friendly spacing */
+  @media (max-width: 600px) {
+    .about-card {
+      padding: 1.8rem;
+    }
+  
+    .about-card h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

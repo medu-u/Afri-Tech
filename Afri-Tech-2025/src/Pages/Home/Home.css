@@ -1,0 +1,159 @@
+
+/* Container */
+.auth-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+  }
+  
+  /* Card */
+  .auth-card {
+    background: #fff;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+  }
+  
+  /* Title */
+  .auth-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .auth-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Mode Buttons */
+  .auth-modes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .mode-button {
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    border: none;
+    background: #eee;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .mode-button.active {
+    background: #4f46e5; /* Indigo */
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.3);
+  }
+  
+  .mode-button:hover {
+    background: #ddd;
+  }
+  
+  /* Form */
+  .auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+    outline: none;
+  }
+  
+  /* Error */
+  .error {
+    color: #dc2626;
+    font-weight: 500;
+  }
+  
+  /* Form Actions */
+  .form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .submit-btn {
+    background: #4f46e5;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.75rem;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background: #4338ca;
+  }
+  
+  .form-note {
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  /* Privacy note */
+  .privacy-note {
+    margin-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #666;
+  }
+  
+  .privacy-link {
+    text-decoration: underline;
+    color: #4f46e5;
+  }
+  
+  .privacy-link:hover {
+    color: #4338ca;
+  }
+  
+  /* About Section */
+  .about-section {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #f9fafb;
+    border-radius: 1.5rem;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+  }
+  
+  .about-section h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-section p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

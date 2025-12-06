@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLocation, useNavigate } from 'react-router-dom';
-import useAuth from '../../Components/useAuth/useAuth';
+
 
 function CourseIntro() {
   const { user } = useAuth();

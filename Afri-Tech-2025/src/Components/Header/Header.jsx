@@ -1,47 +1,46 @@
 import React from 'react'
-import {useAuth} from '../useAuth/useAuth';
 import { Link, useNavigate } from 'react-router-dom';
+import useAuth from '../useAuth/UseAuth';
+import './Header.css'
 
 function Header() {
-    const { user, signOut } = useAuth();
-    const navigate = useNavigate();
-    return (
-      <header className="bg-indigo-600 text-white py-6 shadow-md">
-        <div className="max-w-5xl mx-auto px-4 flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold">
-            Afri-Tech
+  const { user, signOut } = useAuth();
+  const navigate = useNavigate();
+
+  return (
+    <header className="header">
+      <div className="header-container">
+        <Link to="/" className="logo">
+          Afri-Tech
+        </Link>
+
+        <nav className="nav">
+          <Link to="/about" className="nav-link">
+            About
           </Link>
-          <nav className="space-x-4">
-            <Link to="/about" className="hover:underline">
-              About
+          <Link to="/privacy" className="nav-link">
+            Privacy Policy
+          </Link>
+
+          {user ? (
+            <button
+              onClick={() => {
+                signOut();
+                navigate("/");
+              }}
+              className="btn"
+            >
+              Sign Out
+            </button>
+          ) : (
+            <Link to="/" className="btn">
+              Get Started
             </Link>
-            <Link to="/privacy" className="hover:underline">
-              Privacy Policy
-            </Link>
-            {user ? (
-              <>
-                <button
-                  onClick={() => {
-                    signOut();
-                    navigate("/");
-                  }}
-                  className="bg-white text-indigo-600 px-3 py-1 rounded-md font-semibold"
-                >
-                  Sign out
-                </button>
-              </>
-            ) : (
-              <Link
-                to="/"
-                className="bg-white text-indigo-600 px-3 py-1 rounded-md font-semibold"
-              >
-                Get Started
-              </Link>
-            )}
-          </nav>
-        </div>
-      </header>
-    );
+          )}
+        </nav>
+      </div>
+    </header>
+  );
 }
 
-export default Header
+export default Header;

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import "./App.css"
 
 import About from './Pages/About/About';
 import Privacy from './Pages/Privacy/Privacy';
